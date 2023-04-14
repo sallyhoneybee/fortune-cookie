@@ -7,7 +7,7 @@ button {
 /* Cookie */
 .cookie {
   background: transparent;
-  margin: 3rem auto;
+  margin: 10em auto;
   width: 20em;
   height: 17em;
   position: relative;
@@ -210,4 +210,18 @@ button {
 	74%, to {
 		transform: scale(1,1);
 	}
+}
+
+
+@media(max-width: 501px) and (min-width: 300px) {
+  .cookie {
+    margin: 1rem auto;
+  }
+}
+
+@media(max-width: 301px) {
+  .cookie {
+    margin: 1rem auto;
+    transform: scale(0.8);
+  }
 }

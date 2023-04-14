@@ -5,12 +5,16 @@
 	text-align: center;
 	width: 26em;
 	height: 6em;
-  left: -90%;
+  left: -5%;
   top: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* transform: scale(0,1); */
+  transform: scale(0,1);
   transform-origin: 50% 32%;
+  border-radius: 2px;
+  box-shadow:
+  inset .1em .1em .5em rgba(0, 0, 0, .4),
+  .5em .5em .5em rgba(0, 0, 0, .4),;
 }

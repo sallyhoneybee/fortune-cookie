@@ -1,5 +1,8 @@
 body {
   background-color: black;
+  background-image: url('./background2.png');
+  background-size: cover;
+  overflow: hidden;
 }
 
 .App {
@@ -7,4 +10,38 @@ body {
   text-align: center;
   color: white;
   min-height: 100vh;
+}
+
+.header {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+
+@media(max-width: 501px) and (min-width: 300px) {
+  body {
+    background-size: cover;
+    background-image: url('./phone.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .header {
+    content: url("./phoneHeader.png");
+    max-width: 350px;
+  }
+}
+
+@media(max-width: 301px) {
+  body {
+    background-size: cover;
+    background-image: url('./phone.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .header {
+    content: url("./phoneHeader.png");
+    max-width: 300px;
+  }
 }

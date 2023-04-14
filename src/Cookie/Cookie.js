@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./Cookie.css";
 import Fortune from "../Fortune/Fortune";
 
@@ -14,9 +15,18 @@ import crumb9 from "../Crumbs/33.png";
 import crumb10 from "../Crumbs/34.png";
 
 const Cookie = () => {
+  const [isBroken, setIsBroken] = useState(false);
+
+  const breakCookieHandler = () => {
+    setIsBroken(!isBroken);
+  };
+
   return (
     <div>
-      <button className="cookie load">
+      <button
+        className={`cookie load ${isBroken ? "break" : ""}`}
+        onClick={breakCookieHandler}
+      >
         <div className="cookie-section left"></div>
         <div className="cookie-section right"></div>
         <div className="cookie-crumbs">
