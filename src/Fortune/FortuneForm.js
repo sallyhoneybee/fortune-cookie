@@ -12,7 +12,8 @@ const FortuneForm = () => {
           placeholder="Determine someone's fortune"
         />
         <button className="fortune-form-submit" type="submit">
-          Alakazam
+          <span>Send</span>
+          <div className="line"></div>
         </button>
       </form>
     </div>
