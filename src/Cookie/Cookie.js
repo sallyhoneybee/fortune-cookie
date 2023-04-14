@@ -16,7 +16,7 @@ import crumb10 from "../Crumbs/34.png";
 const Cookie = () => {
   return (
     <div>
-      <button className="cookie">
+      <button className="cookie load">
         <div className="cookie-section left"></div>
         <div className="cookie-section right"></div>
         <div className="cookie-crumbs">

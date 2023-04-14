@@ -52,7 +52,8 @@ button {
 
 /* Crumbs */
 .cookie-crumbs {
-  left: calc(50% - 0.4em);
+  left: 40%;
+  top: 50%;
   width: 2em;
   height: 6em;
   z-index: 1;
@@ -66,42 +67,147 @@ button {
 }
 
 .cookie-crumb:nth-child(1) {
-  top: 9%;
-	left: 5%;
+  top: 10%;
+	left: 50%;
 }
 .cookie-crumb:nth-child(2) {
-  top: 40%;
-	right: 105%;
+  top: 30%;
+	right: 80%;
 }
 .cookie-crumb:nth-child(3) {
   top: 30%;
-	left: 75%;
+	left: 35%;
 }
 .cookie-crumb:nth-child(4) {
   top: 70%;
-	right: 55%;
+	right: 95%;
 }
 .cookie-crumb:nth-child(5) {
   top: 55%;
-	left: 90%;
+	left: 50%;
 }
 .cookie-crumb:nth-child(6) {
   top: 75%;
-	right: -10%;
+	right: 0%;
 }
 .cookie-crumb:nth-child(7) {
   top: 95%;
-	left: 10%;
+	left: -10%;
 }
 .cookie-crumb:nth-child(8) {
-  top: 90%;
-	right: 105%;
+  top: 10%;
+	right: 115%;
 }
 .cookie-crumb:nth-child(9) {
   top: 0%;
-	right: 60%;
+	right: 50%;
 }
 .cookie-crumb:nth-child(10) {
   top: 50%;
-	left: 0%;
+	left: -5%;
+}
+
+/* animation */
+
+.load {
+  animation: popOut 0.3s linear;
+}
+
+.break {
+  width: 26em;
+	height: 6em;
+}
+
+.break .left {
+  animation: breakLeft 0.7s ease-in forwards;
+}
+
+.break .right {
+  animation: breakRight 0.7s ease-in forwards;
+}
+
+.break .cookie-crumbs {
+  animation: fallOut 0.7s ease-in forwards;
+}
+
+.break .fortune {
+	animation: foldOut 0.7s ease-in forwards;
+}
+
+@keyframes popOut {
+  from {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes breakLeft {
+  from {
+    transform: translateX(0) rotate(25deg);
+  }
+  30%, 40% {
+    transform: translateX(0) rotate(55deg);
+	}
+	70%, 80% {
+		opacity: 1;
+		transform: translateX(-14em) rotate(50deg);
+	}
+	to {
+		opacity: 0;
+		transform: translateX(-14em) rotate(50deg);
+	}
+}
+
+@keyframes breakRight {
+	from {
+		transform: translateX(0) rotate(-25deg);
+	}
+	30%, 40% {
+		transform: translateX(0) rotate(-55deg);
+	}
+	70%, 80% {
+		opacity: 1;
+		transform: translateX(14em) rotate(-50deg);
+	}
+	to {
+		opacity: 0;
+		transform: translateX(14em) rotate(-50deg);
+	}
+}
+
+@keyframes fallOut {
+	from {
+		left: calc(50% - 0.4em);
+		width: 0.8em;
+		transform: translateY(0);
+	}
+	30% {
+		opacity: 1;
+	}
+	60%, to {
+		opacity: 0;
+		left: calc(50% - 3em);
+		width: 6em;
+		transform: translateY(24em);
+	}
+}
+
+@keyframes foldOut {
+	from {
+		transform: scale(0.23,0.7);
+	}
+	30%, 40% {
+		transform: scale(0.5,0.7);
+	}
+	69% {
+		transform: scale(1,0.7);
+	}
+	74%, to {
+		transform: scale(1,1);
+	}
 }
