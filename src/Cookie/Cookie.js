@@ -5,7 +5,6 @@ const Cookie = () => {
   return (
     <div>
       <button className="cookie">
-        🥠
         <div className="cookie-section left"></div>
         <div className="cookie-section right"></div>
         <div className="cookie-crumbs">

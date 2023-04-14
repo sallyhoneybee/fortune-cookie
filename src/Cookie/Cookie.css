@@ -1,4 +1,52 @@
-.cookie {
+/* set-up */
+button {
   all: unset;
-  font-size: 200px;
+  cursor: pointer;
+}
+
+/* Cookie */
+.cookie {
+  background: transparent;
+  margin: 3rem auto;
+  width: 20em;
+  height: 17em;
+  position: relative;
+}
+
+.cookie-section, .cookie-crumbs, .cookie-crumb, .fortune {
+  position: absolute;
+  top: 0;
+  transform: translateX(50%)
+}
+
+.cookie-section, .cookie-crumb {
+  background: currentColor;
+  color: #e9b070;
+}
+
+.cookie-section {
+  width: 9em;
+  height: 18em;
+  z-index: 2;
+}
+
+.left {
+  border-radius: 8em 1.5em 1.5em 7em / 50%;
+  transform: rotate(-30deg);
+  left: 0.5em;
+  box-shadow:
+  .7em 0.2em .5em rgba(255, 255, 255, .3)inset,
+  0.1em 0.1em .5em rgba(0,0,0,.3)  inset,
+  -0.75em 0 1.2em rgba(0,0,0,.5)  inset;
+}
+
+.right {
+  border-radius: 7em 1.5em 1.5em 8em / 50% 50%;
+  right: 1em;
+  transform: rotate(210deg);
+  clip-path: polygon(0% 0%, 54% 0%, 100% 40%, 100% 100%, 0% 100%);
+  box-shadow:
+		.7em 0em .5em rgba(255, 255, 255, .3) inset,
+    0.1em 0.1em .5em rgba(0,0,0,.3)  inset,
+		-0.75em 0 1.2em rgba(0,0,0,.5) inset;
 }
