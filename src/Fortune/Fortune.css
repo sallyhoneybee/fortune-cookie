@@ -18,3 +18,17 @@
   inset .1em .1em .5em rgba(0, 0, 0, .4),
   .5em .5em .5em rgba(0, 0, 0, .4),;
 }
+
+@media(max-width: 601px) and (min-width: 300px) {
+  .fortune {
+    width: 20em;
+    left: 5%;
+  }
+}
+
+@media(max-width: 301px) {
+  .fortune {
+    width: 20em;
+    left: -7%;
+  }
+}
