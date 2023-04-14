@@ -22,7 +22,7 @@ const Cookie = () => {
   };
 
   return (
-    <div>
+    <div className="cookie-container">
       <button
         className={`cookie load ${isBroken ? "break" : ""}`}
         onClick={breakCookieHandler}
