@@ -127,7 +127,7 @@ button {
 }
 
 .break .cookie-crumbs {
-  animation: fallOut 0.7s ease-in forwards;
+  animation: fallOut 1.5s ease-in forwards;
 }
 
 .break .fortune {
@@ -189,10 +189,10 @@ button {
 	30% {
 		opacity: 1;
 	}
-	60%, to {
+	90%, to {
 		opacity: 0;
 		left: calc(50% - 3em);
-		width: 6em;
+		width: 9em;
 		transform: translateY(24em);
 	}
 }
