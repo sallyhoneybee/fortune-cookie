@@ -19,12 +19,9 @@ button {
   transform: translateX(50%)
 }
 
-.cookie-section, .cookie-crumb {
+.cookie-section {
   background: currentColor;
   color: #e9b070;
-}
-
-.cookie-section {
   width: 9em;
   height: 18em;
   z-index: 2;
@@ -49,4 +46,60 @@ button {
 		.7em 0em .5em rgba(255, 255, 255, .3) inset,
     0.1em 0.1em .5em rgba(0,0,0,.3)  inset,
 		-0.75em 0 1.2em rgba(0,0,0,.5) inset;
+}
+
+/* Crumbs */
+.cookie-crumbs {
+  left: calc(50% - 0.4em);
+  width: 2em;
+  height: 6em;
+  z-index: 1;
+}
+
+.cookie-crumb {
+  width: 1.5em;
+  height: 1.5em;
+  object-fit: cover;
+  background: transparent;
+}
+
+.cookie-crumb:nth-child(1) {
+  top: 9%;
+	left: 5%;
+}
+.cookie-crumb:nth-child(2) {
+  top: 40%;
+	right: 105%;
+}
+.cookie-crumb:nth-child(3) {
+  top: 30%;
+	left: 75%;
+}
+.cookie-crumb:nth-child(4) {
+  top: 70%;
+	right: 55%;
+}
+.cookie-crumb:nth-child(5) {
+  top: 55%;
+	left: 90%;
+}
+.cookie-crumb:nth-child(6) {
+  top: 75%;
+	right: -10%;
+}
+.cookie-crumb:nth-child(7) {
+  top: 95%;
+	left: 10%;
+}
+.cookie-crumb:nth-child(8) {
+  top: 90%;
+	right: 105%;
+}
+.cookie-crumb:nth-child(9) {
+  top: 0%;
+	right: 60%;
+}
+.cookie-crumb:nth-child(10) {
+  top: 50%;
+	left: 0%;
 }
