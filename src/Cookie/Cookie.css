@@ -213,7 +213,7 @@ button {
 }
 
 
-@media(max-width: 501px) and (min-width: 300px) {
+@media(max-width: 601px) and (min-width: 300px) {
   .cookie {
     margin: 1rem auto;
   }

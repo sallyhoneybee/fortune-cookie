@@ -18,7 +18,7 @@ body {
 }
 
 
-@media(max-width: 501px) and (min-width: 300px) {
+@media(max-width: 601px) and (min-width: 300px) {
   body {
     background-size: cover;
     background-image: url('./phone.png');
