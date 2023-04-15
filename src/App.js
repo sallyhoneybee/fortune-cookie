@@ -1,6 +1,6 @@
 import "./App.css";
 import Cookie from "./Cookie/Cookie";
-import FortuneForm from "./Fortune/FortuneForm";
+// import FortuneForm from "./Fortune/FortuneForm";
 import header from "./header.png";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <img className="header" src={header} alt="" />
         <Cookie />
       </header>
-      <FortuneForm />
+      {/* <FortuneForm /> */}
     </div>
   );
 }
