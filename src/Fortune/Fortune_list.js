@@ -48,6 +48,9 @@ const FORTUNE_LIST = [
   "There is no shortcut to success but always remember to CRTL + S",
   "There is no shortcut to success but always remember to CRTL + S",
   "There is no shortcut to success but always remember to CRTL + S",
+  "Have you tried restarting your server?",
+  "Have you tried restarting your device?",
+  "Have you tried restarting your server?",
   "Your future is strong with pizza",
   "uh oh... Your Fortune Teller has left the building",
 ];
