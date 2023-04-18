@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fortune Cookie",
+  "name": "Mama's Fortune Shop",
   "icons": [
     {
       "src": "favicon.png",
